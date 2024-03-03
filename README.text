@@ -1,0 +1,21 @@
+1 -- SignedIn: This component is used to conditionally render its children based on whether the user is signed in.
+ It provides a way to display content that should only be visible to authenticated users.
+<SignedIn>
+  {/* Content to be displayed for signed-in users */}
+</SignedIn>
+
+2- SignedOut: Similar to SignedIn, this component conditionally renders its children based on whether the user is signed out. 
+It's useful for displaying content specifically for non-authenticated users.
+
+<SignedOut>
+  {/* Content to be displayed for signed-out users */}
+</SignedOut>
+
+3- SignInButton: This component provides a pre-styled sign-in button that you can use in your application UI.
+ When clicked, it triggers the sign-in flow provided by Clerk.
+
+ <SignInButton />
+
+ 4-UserButton: This component represents a button that displays the current user's name and avatar when they are signed in.
+  It also provides a dropdown menu with options like signing out.
+  <UserButton />
